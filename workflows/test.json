@@ -1,0 +1,39 @@
+{
+  "1": {
+    "inputs": {
+      "image": "sampled_frame.jpg",
+      "upload": "image"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "2": {
+    "inputs": {
+      "images": [
+        "1",
+        0
+      ],
+      "color_r": 135,
+      "color_g": 137,
+      "color_b": 199
+    },
+    "class_type": "SimpleEffectMac",
+    "_meta": {
+      "title": "Apply Simple Effect (Mac)"
+    }
+  },
+  "3": {
+    "inputs": {
+      "images": [
+        "2",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  }
+}
